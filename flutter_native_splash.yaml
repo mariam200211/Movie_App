@@ -1,0 +1,9 @@
+# flutter_native_splash-development.yaml
+flutter_native_splash:
+  background_image: assets/images/splash.png
+#  color: "#ffffff"
+#  image: assets/images/logo.png
+#  branding: assets/images/branding.png
+##  color_dark: "#121212"
+##  image_dark: assets/logo-development.png
+##  branding_dark: assets/branding-development.png
