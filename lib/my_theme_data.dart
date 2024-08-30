@@ -11,13 +11,13 @@ class MyThemeData{
     textTheme: TextTheme(
       titleLarge: TextStyle(
         fontSize: 22,
-        fontWeight: FontWeight.bold,
+        fontWeight: FontWeight.w300,
         color: AppColors.whiteColor
       ),
 
       titleMedium: TextStyle(
         fontSize: 20,
-        fontWeight: FontWeight.bold,
+        fontWeight: FontWeight.w100,
         color: AppColors.whiteColor
       ),
 

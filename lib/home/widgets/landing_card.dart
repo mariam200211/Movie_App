@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movies_app/api/api_constatns.dart';
+import 'package:movies_app/app_colors.dart';
 
 class LandingCard extends StatelessWidget {
   const LandingCard({super.key, required this.image, required this.name});
@@ -27,9 +28,9 @@ class LandingCard extends StatelessWidget {
                   end: Alignment.bottomCenter,
                   colors: [
                     Colors.transparent,
-                    backgroundPrimary.withOpacity(0.50),
-                    backgroundPrimary.withOpacity(0.75),
-                    backgroundPrimary.withOpacity(1.00),
+                    AppColors.blackColor.withOpacity(0.50),
+                    AppColors.blackColor.withOpacity(0.75),
+                    AppColors.blackColor.withOpacity(1.00),
                   ]),
             ),
           ),
@@ -39,9 +40,9 @@ class LandingCard extends StatelessWidget {
                   begin: Alignment.topCenter,
                   end: Alignment.center,
                   colors: [
-                    backgroundPrimary.withOpacity(0.80),
-                    backgroundPrimary.withOpacity(0.60),
-                    backgroundPrimary.withOpacity(0.40),
+                    AppColors.blackColor.withOpacity(0.80),
+                    AppColors.blackColor.withOpacity(0.60),
+                    AppColors.blackColor.withOpacity(0.40),
                     Colors.transparent
                   ]),
             ),
