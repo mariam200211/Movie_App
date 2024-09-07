@@ -16,7 +16,7 @@ const baseUrl = 'https://api.themoviedb.org/3/';
 var key = '?api_key=$apiKey';
 late String endPoint;
 
-class ApiServices {
+class ApiManager {
  Future<MovieModel> getUpcomingMovies() async {
   endPoint = 'movie/upcoming';
   final url = '$baseUrl$endPoint$key';
@@ -104,9 +104,6 @@ class ApiServices {
   }
   throw Exception('failed to load searched movie ');
  }
-
-
-
 
 
 }
