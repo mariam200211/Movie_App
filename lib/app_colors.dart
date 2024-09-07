@@ -7,8 +7,7 @@ class AppColors{
   static Color greyIconsColor = Color(0xffC6C6C6);
   static Color orangeColor = Color(0xffFFBB3B);
   static Color whiteColor = Color(0xffFFFFFF);
-  static Color redColor = Color(0xff282A28);
-  static Color darkGrayColor = Color(0xff514F4F);
+  static Color darkGrayColor = Color(0xff282A28);
 
 
 
