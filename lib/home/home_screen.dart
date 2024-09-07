@@ -34,7 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(icon: ImageIcon(AssetImage('assets/images/Home icon.png')),label: 'Home'),
           BottomNavigationBarItem(icon: Icon(Icons.search),label: 'Search'),
           BottomNavigationBarItem(icon:  ImageIcon(AssetImage('assets/images/Browse.png')),label: 'Browse'),
-          BottomNavigationBarItem(icon:  ImageIcon(AssetImage('assets/images/Icon bookmarks.png')),label: 'bookmarks'),
+          BottomNavigationBarItem(icon:  ImageIcon(AssetImage('assets/images/Icon bookmarks.png')),label: 'watch list'),
         ],),
       ) ,
       body: tabs[selectedIndex],
