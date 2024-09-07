@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movies_app/api/api_constatns.dart';
 import 'package:movies_app/app_colors.dart';
+import 'package:movies_app/home/home-tap/movie_detailed_screen.dart';
 import 'package:movies_app/model/movie_recommendation_mode.dart';
 
 class MoviePopular extends StatelessWidget {
@@ -44,7 +45,14 @@ class MoviePopular extends StatelessWidget {
                               padding: const EdgeInsets.all(5.0),
                               child: InkWell(
                                 onTap: () {
-
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => MovieDetailScreen(
+                                        movieId: data[index].id,
+                                      ),
+                                    ),
+                                  );
                                 },
                                 child: Container(
                                   decoration: BoxDecoration(

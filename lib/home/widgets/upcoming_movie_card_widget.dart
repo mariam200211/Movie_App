@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movies_app/api/api_constatns.dart';
 import 'package:movies_app/app_colors.dart';
+import 'package:movies_app/home/home-tap/movie_detailed_screen.dart';
 import 'package:movies_app/model/movie_model.dart';
 
 class UpcomingMovieCard extends StatelessWidget {
@@ -32,7 +33,25 @@ class UpcomingMovieCard extends StatelessWidget {
                           style: Theme.of(context).textTheme.titleLarge,
                       ),
                     ),
-
+                    Expanded(
+                      child: ListView.builder(
+                        shrinkWrap: true,
+                        // padding: const EdgeInsets.all(3),
+                        scrollDirection: Axis.horizontal,
+                        itemCount: data!.length,
+                        itemBuilder: (context, index) {
+                          return Padding(
+                              padding: const EdgeInsets.all(5.0),
+                              child: InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) => MovieDetailScreen(
+                                        movieId: data[index].id,
+                                      ),
+                                    ),
+                                  );
                     Expanded(
                       child: ListView.builder(
                         shrinkWrap: true,
