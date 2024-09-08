@@ -18,7 +18,7 @@ class HomeTab extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeTab> {
-  ApiServices apiManager = ApiServices();
+  ApiManager apiManager = ApiManager();
 
   late Future<MovieModel> upcomingFuture;
   late Future<MovieRecommendationsModel> popularApi;

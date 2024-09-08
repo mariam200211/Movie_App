@@ -16,8 +16,8 @@ class MyThemeData{
       ),
 
       titleMedium: TextStyle(
-        fontSize: 20,
-        fontWeight: FontWeight.w100,
+        fontSize: 18,
+        fontWeight: FontWeight.w300,
         color: AppColors.whiteColor
       ),
 

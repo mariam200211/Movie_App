@@ -30,9 +30,10 @@ class UpcomingMovieCard extends StatelessWidget {
                       padding: const EdgeInsets.all(10.0),
                       child: Text(
                         headlineText,
-                          style: Theme.of(context).textTheme.titleLarge,
+                        style: Theme.of(context).textTheme.titleLarge,
                       ),
                     ),
+
                     Expanded(
                       child: ListView.builder(
                         shrinkWrap: true,
@@ -52,18 +53,6 @@ class UpcomingMovieCard extends StatelessWidget {
                                       ),
                                     ),
                                   );
-                    Expanded(
-                      child: ListView.builder(
-                        shrinkWrap: true,
-                        // padding: const EdgeInsets.all(3),
-                        scrollDirection: Axis.horizontal,
-                        itemCount: data!.length,
-                        itemBuilder: (context, index) {
-                          return Padding(
-                              padding: const EdgeInsets.all(5.0),
-                              child: InkWell(
-                                onTap: () {
-
                                 },
                                 child: Container(
                                   decoration: BoxDecoration(

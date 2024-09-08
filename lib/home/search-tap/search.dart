@@ -7,11 +7,6 @@ import 'package:movies_app/model/search.dart';
 import 'package:movies_app/api/api_manager.dart';
 class SearchTap extends StatefulWidget {
 
-import 'package:movies_app/api/api_manager.dart';
-import 'package:movies_app/app_colors.dart';
-import 'package:movies_app/model/search.dart';
-
-class SearchTap extends StatefulWidget {
 
   @override
   State<SearchTap> createState() => _SearchTapState();
@@ -19,9 +14,6 @@ class SearchTap extends StatefulWidget {
 
 class _SearchTapState extends State<SearchTap> {
 
-  ScrollController _scrollController = ScrollController();
-  TextEditingController searchController = TextEditingController();
-  ApiServices apiManager = ApiServices();
   ScrollController _scrollController = ScrollController();
   TextEditingController searchController = TextEditingController();
   ApiManager apiManager = ApiManager();

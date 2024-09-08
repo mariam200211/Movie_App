@@ -5,6 +5,8 @@ import 'package:movies_app/api/api_manager.dart';
 import 'package:movies_app/model/movie_detail_model.dart';
 import 'package:movies_app/model/movie_recommendation_mode.dart';
 
+import '../../app_colors.dart';
+
 
 
 
@@ -17,7 +19,7 @@ class MovieDetailScreen extends StatefulWidget {
 }
 
 class MovieDetailScreenState extends State<MovieDetailScreen> {
-  ApiServices apiServices = ApiServices();
+  ApiManager apiServices = ApiManager();
 
   late Future<MovieDetailModel> movieDetail;
   late Future<MovieRecommendationsModel> movieRecommendationModel;
@@ -40,6 +42,7 @@ class MovieDetailScreenState extends State<MovieDetailScreen> {
     var size = MediaQuery.of(context).size;
     print(widget.movieId);
     return Scaffold(
+      backgroundColor: AppColors.blackColor,
       body: SingleChildScrollView(
         child: FutureBuilder(
           future: movieDetail,
@@ -87,29 +90,21 @@ class MovieDetailScreenState extends State<MovieDetailScreen> {
                       children: [
                         Text(
                           movie.title,
-                          style: const TextStyle(
-                            fontSize: 22,
-                            fontWeight: FontWeight.bold,
-                          ),
+                          style: Theme.of(context).textTheme.titleLarge
                         ),
                         const SizedBox(height: 15),
                         Row(
                           children: [
                             Text(
                               movie.releaseDate.year.toString(),
-                              style: const TextStyle(
-                                color: Colors.grey,
-                              ),
+                              style: Theme.of(context).textTheme.titleSmall
                             ),
                             const SizedBox(
                               width: 30,
                             ),
                             Text(
                               genresText,
-                              style: const TextStyle(
-                                color: Colors.grey,
-                                fontSize: 17,
-                              ),
+                              style: Theme.of(context).textTheme.titleMedium
                             ),
                           ],
                         ),
@@ -120,9 +115,7 @@ class MovieDetailScreenState extends State<MovieDetailScreen> {
                           movie.overview,
                           maxLines: 6,
                           overflow: TextOverflow.ellipsis,
-                          style: const TextStyle(
-                              color: Colors.white, fontSize: 16),
-                        ),
+                          style: Theme.of(context).textTheme.titleMedium)
                       ],
                     ),
                   ),
